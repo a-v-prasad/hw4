@@ -1,31 +1,31 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Tacostagram Final</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+# <!DOCTYPE html>
+# <html>
+#   <head>
+#     <title>Tacostagram Final</title>
+#     <meta name="viewport" content="width=device-width,initial-scale=1">
+#     <%= csrf_meta_tags %>
+#     <%= csp_meta_tag %>
 
-    <link rel="stylesheet" href="/stylesheets/application.css">
-  </head>
+#     <link rel="stylesheet" href="/stylesheets/application.css">
+#   </head>
 
-  <body>
-    <div>
-      <%= flash["notice"] %>
-    </div>
+#   <body>
+#     <div>
+#       <%= flash["notice"] %>
+#     </div>
 
-    <div>
-      <a href="/">Home</a>
+#     <div>
+#       <a href="/">Home</a>
 
-      <% if @current_user %>
-        <%= @current_user["username"] %>
-        <a href="/logout">Logout</a>
-      <% else %>
-        <a href="/login">Login</a>
-        <a href="/users/new">Signup</a>
-      <% end %>
-    </div>
+#       <% if @current_user %>
+#         <%= @current_user["username"] %>
+#         <a href="/logout">Logout</a>
+#       <% else %>
+#         <a href="/login">Login</a>
+#         <a href="/users/new">Signup</a>
+#       <% end %>
+#     </div>
 
-    <%= yield %>
-  </body>
-</html>
+#     <%= yield %>
+#   </body>
+# </html>

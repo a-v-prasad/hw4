@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "4.0.1"
-
+ruby "4.0.2"
+#updated version from 4.0.1 to 4.0.2 because codespace was running ruby 4.0.2
 gem "rails", "~> 8.1.2"
 gem "sqlite3", "~> 2.1"
 gem "puma", ">= 5.0"
